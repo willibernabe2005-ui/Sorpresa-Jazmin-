@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Jazmín 💖</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family:Arial, sans-serif;
+text-align:center;
+}
+
+#mensaje{
+display:none;
+font-size:24px;
+color:white;
+max-width:600px;
+padding:20px;
+animation:aparecer 2s ease;
+}
+
+#abrirBtn{
+padding:15px 35px;
+font-size:22px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4b6e;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+#abrirBtn:hover{
+transform:scale(1.1);
+}
+
+@keyframes aparecer{
+from{opacity:0; transform:scale(0.8);}
+to{opacity:1; transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="inicio">
+<button id="abrirBtn" onclick="mostrarMensaje()">Abrir 💌</button>
+</div>
+
+<div id="mensaje">
+<p>
+Jazmín 🌸<br><br>
+
+Quería decirte algo muy importante...<br><br>
+
+Te quiero muchísimo ❤️<br>
+Gracias por estar en mi vida, por cada momento, por cada sonrisa y por todo lo que eres.<br><br>
+
+Eres alguien muy especial para mí y me alegra muchísimo haberte conocido.<br><br>
+
+Con cariño 💖
+</p>
+</div>
+
+<script>
+function mostrarMensaje(){
+document.getElementById("inicio").style.display="none";
+document.getElementById("mensaje").style.display="block";
+}
+</script>
+
+</body>
+</html>
